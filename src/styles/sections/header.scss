@@ -1,0 +1,130 @@
+/* header */
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header--open-menu {
+  @media (max-width: 1079px) {
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    background-color: #000;
+  }
+}
+
+/* Весь header (обертка) */
+
+.header__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1079px) {
+    flex-direction: column;
+    height: 100vh;
+    padding: 30px 47px 65px;
+  }
+
+  @media (min-width: 1080px) {
+    padding-top: 16px;
+  }
+}
+
+/* Позиционирование лого */
+
+.header__logo {
+  @media (max-width: 1079px) {
+    align-self: flex-start;
+  }
+}
+
+/* Телефон и заказ звонка (обертка) */
+
+.header__call {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1079px) {
+    flex-direction: column;
+  }
+}
+
+/* Телефон */
+
+.header__tel {
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: 20px;
+
+  @media (min-width: 1080px) {
+    margin-right: 15px;
+  }
+
+  @media (max-width: 1079px) {
+    margin-bottom: 24px;
+  }
+}
+
+/* Заказ звонка (позиционирование) */
+
+/* .header__call-request {} */
+
+/* Меню */
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 1080px) {
+    margin-left: 60px;
+  }
+
+  @media (max-width: 1079px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 20px;
+    visibility: hidden;
+  }
+}
+
+/* Список меню */
+
+.menu__list {
+  display: flex;
+  gap: 26px;
+  font-weight: 800;
+  text-transform: capitalize;
+
+  @media (max-width: 1079px) {
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* Ссылки меню */
+
+.menu__link {
+  color: var(--white-color);
+}
+
+/* Кнопка меню */
+
+.menu__button {
+  position: absolute;
+  top: 30px;
+  right: 47px;
+}
+
+.menu--open {
+  @media (max-width: 1079px) {
+    visibility: visible;
+  }
+}

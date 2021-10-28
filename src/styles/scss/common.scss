@@ -1,0 +1,10 @@
+.container {
+  max-width: var(--container-size);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.body {
+  font-family: var(--main-font);
+  background-color: var(--white-color);
+}

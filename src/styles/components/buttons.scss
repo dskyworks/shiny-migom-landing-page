@@ -1,0 +1,51 @@
+/* Кнопка заказа звонка */
+
+.call-request {
+  padding: 17px 40px;
+  color: var(--black-color);
+  font-weight: 800;
+  font-size: 16px;
+  font-family: var(--main-font);
+  background-color: var(--cyan-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    filter: brightness(1.5);
+  }
+}
+
+/* Кнопка меню */
+
+.menu {
+  &__button {
+    display: none;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: 1079px) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    stroke: var(--white-color);
+  }
+}
+
+.menu__icon-menu,
+.menu__button--open .menu__icon-cross {
+  display: block;
+}
+
+.menu__icon-cross,
+.menu__button--open .menu__icon-menu {
+  display: none;
+}

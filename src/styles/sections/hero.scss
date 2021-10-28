@@ -1,0 +1,83 @@
+.hero {
+  height: 849px;
+  background: url('../images/hero/bg.jpg') no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  will-change: background-position;
+}
+
+.hero__title {
+  padding-top: 180px;
+  color: var(--white-absolute-color);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1.3;
+}
+
+.hero__description {
+  max-width: 540px;
+  margin-top: 20px;
+  color: var(--white-absolute-color);
+  font-size: 18px;
+}
+
+.hero__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 66px;
+  margin-top: 72px;
+  padding: 0 58px 0 18px;
+  color: var(--black-absolute-color);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--yellow-color);
+  border: 0;
+  border-radius: 5px;
+}
+
+.hero__button::after {
+  position: absolute;
+  right: 18px;
+  width: 33px;
+  height: 33px;
+  content: '';
+  background: url('../images/hero/ico-wheel.png') no-repeat center;
+  background-size: cover;
+}
+
+.services {
+  position: relative;
+  z-index: 1;
+  background-color: cornflowerblue;
+
+  @media (min-width: 1080px) {
+    height: 288px;
+    margin-top: 84px;
+  }
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.services__item {
+  background-color: darkgoldenrod;
+  border-radius: 10px;
+}
+
+.services__link {
+}
+
+.services__card-price {
+}
+
+.services__card-title {
+}
+
+.services__card-description {
+}
+
+

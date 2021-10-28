@@ -1,0 +1,16 @@
+.second {
+  position: relative;
+  width: 100%;
+  height: 3000px;
+}
+
+.second::before {
+  position: absolute;
+  top: -198px;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url('../images/hero/track.svg') no-repeat;
+  background-position: top -120px center;
+  content: '';
+}
