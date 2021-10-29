@@ -49,11 +49,16 @@
 .services {
   position: relative;
   z-index: 1;
-  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: 1080px) {
     height: 288px;
     margin-top: 84px;
+  }
+
+  @media (max-width: 1079px) {
+    margin-top: 78px;
   }
 }
 
@@ -61,23 +66,72 @@
   display: flex;
   justify-content: space-between;
   height: 100%;
+
+  @media (min-width: 1080px) {
+    flex-direction: row;
+  }
+
+  @media (max-width: 1079px) {
+    flex-direction: column;
+    max-width: 330px;
+  }
 }
 
 .services__item {
-  background-color: darkgoldenrod;
+  padding: 20px;
   border-radius: 10px;
+
+  @media (min-width: 1080px) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 1079px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.services__item--main {
+  background-color: var(--white-absolute-color);
+}
+
+.services__item--passenger {
+  background-color: var(--yellow-color);
+}
+
+.services__item--crossover {
+  background-color: var(--gray-color);
+}
+
+.services__item--truck {
+  background-color: var(--cyan-color);
 }
 
 .services__link {
+  width: 100%;
+  height: 100%;
 }
 
 .services__card-price {
 }
 
 .services__card-title {
+  margin-top: 13px;
+}
+
+.services__item--main .services__card-title {
+  margin-top: 25px;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.services__item--main .services__link {
+  padding-right: 45px;
+  padding-left: 45px;
 }
 
 .services__card-description {
 }
-
-
