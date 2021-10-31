@@ -1,5 +1,5 @@
 {
-  "ignoreFiles": ["**/*.js", "**/*.min.css"],
+  "ignoreFiles": ["**/*.js", "**/*.min.css", "**/*.html", "**/*.md"],
   "plugins": [
     "stylelint-scss",
     "stylelint-order",
