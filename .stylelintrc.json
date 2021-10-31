@@ -19,7 +19,6 @@
       }
     ],
     "declaration-block-no-shorthand-property-overrides": true,
-    "block-no-empty": true,
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
