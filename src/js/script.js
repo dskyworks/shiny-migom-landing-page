@@ -39,4 +39,3 @@ const observer = new IntersectionObserver((e) => {
 });
 
 observer.observe(heroBackground);
-
