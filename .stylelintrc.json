@@ -1,11 +1,13 @@
 {
   "ignoreFiles": ["**/*.js", "**/*.min.css", "**/*.html", "**/*.md"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-sass-guidelines"],
   "plugins": [
-    "stylelint-scss",
     "stylelint-order",
     "stylelint-declaration-block-no-ignored-properties"
   ],
   "rules": {
+    "no-descending-specificity": null,
+    "order/properties-alphabetical-order": null,
     "color-no-invalid-hex": true,
     "font-family-no-duplicate-names": true,
     "function-calc-no-unspaced-operator": true,
@@ -136,6 +138,7 @@
     "order/order": ["custom-properties", "declarations"],
     "order/properties-order": [
       "all",
+      "content",
       "position",
       "top",
       "right",
