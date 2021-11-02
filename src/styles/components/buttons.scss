@@ -7,7 +7,7 @@
   font-size: 16px;
   font-family: var(--main-font);
   background-color: var(--cyan-color);
-  border: none;
+  border: 0;
   border-radius: 5px;
   cursor: pointer;
 
@@ -27,7 +27,7 @@
     display: none;
     padding: 0;
     background-color: transparent;
-    border: none;
+    border: 0;
     cursor: pointer;
 
     @media (max-width: 1079px) {

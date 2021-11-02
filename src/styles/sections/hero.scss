@@ -4,14 +4,6 @@
   background-position: center bottom;
   background-size: cover;
   will-change: background-position;
-
-  @media (min-width: 1080px) {
-
-  }
-
-  @media (max-width: 1079px) {
-
-  }
 }
 
 .hero__title {
@@ -50,22 +42,14 @@
   border: 0;
   border-radius: 5px;
   cursor: pointer;
-
-  @media (min-width: 1080px) {
-
-  }
-
-  @media (max-width: 1079px) {
-
-  }
 }
 
 .hero__button::after {
+  content: '';
   position: absolute;
   right: 18px;
   width: 33px;
   height: 33px;
-  content: '';
   background: url('../images/hero/ico-wheel.png') no-repeat center;
   background-size: cover;
 }
@@ -87,7 +71,6 @@
     margin-top: 78px;
   }
 }
-
 
 .services__list {
   display: flex;
@@ -120,9 +103,17 @@
   }
 }
 
+.services__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
 .services__item-main {
   width: 412px;
-  background: url('../images/hero/wheel-replace.jpg')
+  background:
+    url('../images/hero/wheel-replace.jpg')
     var(--white-absolute-color) no-repeat;
   background-position: center;
   background-size: cover;
@@ -143,21 +134,22 @@
 
   @media (min-width: 1080px) {
     &::after {
+      content: '';
       position: absolute;
       bottom: 0;
       left: 13px;
       display: block;
       width: 108px;
       height: 108px;
-      content: '';
       background: url('../images/hero/sedan.png') no-repeat;
       background-size: contain;
-      opacity: 0.5;
+      opacity: 50%;
     }
   }
 
   @media (max-width: 1079px) {
     &::after {
+      content: '';
       position: absolute;
       right: 13px;
       bottom: 0;
@@ -166,8 +158,7 @@
       height: 108px;
       background: url('../images/hero/sedan.png') no-repeat;
       background-size: contain;
-      opacity: 0.5;
-      content: '';
+      opacity: 50%;
     }
   }
 }
@@ -182,21 +173,22 @@
 
   @media (min-width: 1080px) {
     &::after {
+      content: '';
       position: absolute;
       bottom: 0;
       left: 13px;
       display: block;
       width: 108px;
       height: 108px;
-      content: '';
       background: url('../images/hero/jeep.png') no-repeat;
       background-size: contain;
-      opacity: 0.5;
+      opacity: 50%;
     }
   }
 
   @media (max-width: 1079px) {
     &::after {
+      content: '';
       position: absolute;
       right: 13px;
       bottom: 0;
@@ -205,8 +197,7 @@
       height: 108px;
       background: url('../images/hero/jeep.png') no-repeat;
       background-size: contain;
-      opacity: 0.5;
-      content: '';
+      opacity: 50%;
     }
   }
 }
@@ -221,21 +212,22 @@
 
   @media (min-width: 1080px) {
     &::after {
+      content: '';
       position: absolute;
       bottom: 0;
       left: 13px;
       display: block;
       width: 108px;
       height: 108px;
-      content: '';
       background: url('../images/hero/truck.png') no-repeat;
       background-size: contain;
-      opacity: 0.5;
+      opacity: 50%;
     }
   }
 
   @media (max-width: 1079px) {
     &::after {
+      content: '';
       position: absolute;
       right: 13px;
       bottom: 0;
@@ -244,17 +236,9 @@
       height: 108px;
       background: url('../images/hero/truck.png') no-repeat;
       background-size: contain;
-      opacity: 0.5;
-      content: '';
+      opacity: 50%;
     }
   }
-}
-
-.services__link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
 }
 
 .services__card-price {
@@ -262,15 +246,13 @@
   padding: 3px 14px;
   font-weight: 300;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(0 0 0 / 10%);
   border-radius: 5px;
 }
 
 .services__card-title {
   margin-top: 13px;
 
-  @media (min-width: 1080px) {
-  }
 
   @media (max-width: 1079px) {
     width: 190px;
@@ -285,6 +267,7 @@
   font-size: 30px;
 
   &::after {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -292,7 +275,6 @@
     height: 5px;
     background-color: var(--black-absolute-color);
     border-radius: 5px;
-    content: '';
   }
 }
 

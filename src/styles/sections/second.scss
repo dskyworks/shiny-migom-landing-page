@@ -5,6 +5,7 @@
 }
 
 .second::before {
+  content: '';
   position: absolute;
   top: -198px;
   display: block;
@@ -12,5 +13,4 @@
   height: 200px;
   background: url('../images/hero/track.svg') no-repeat;
   background-position: top -120px center;
-  content: '';
 }
