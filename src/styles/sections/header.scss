@@ -128,3 +128,10 @@
     visibility: visible;
   }
 }
+
+.logo {
+  @media (max-width: 1079px) {
+    width: 134px;
+    height: 66px;
+  }
+}

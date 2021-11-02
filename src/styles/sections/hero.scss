@@ -6,6 +6,18 @@
   will-change: background-position;
 }
 
+.hero__inner {
+  @media (min-width: 1080px) {
+
+  }
+
+  @media (max-width: 1079px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .hero__title {
   color: var(--white-absolute-color);
   font-weight: 800;
@@ -18,6 +30,7 @@
 
   @media (max-width: 1079px) {
     padding-top: 187px;
+    font-size: 33px;
   }
 }
 
@@ -26,6 +39,14 @@
   margin-top: 20px;
   color: var(--white-absolute-color);
   font-size: 18px;
+
+  @media (min-width: 1080px) {
+
+  }
+
+  @media (max-width: 1079px) {
+    font-size: 16px;
+  }
 }
 
 .hero__button {
@@ -255,7 +276,7 @@
 
 
   @media (max-width: 1079px) {
-    width: 190px;
+    width: 231px;
   }
 }
 
@@ -264,7 +285,14 @@
   margin-top: 18px;
   padding-bottom: 20px;
   font-weight: 800;
-  font-size: 30px;
+
+  @media (min-width: 1080px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 1079px) {
+    font-size: 20px;
+  }
 
   &::after {
     content: '';
