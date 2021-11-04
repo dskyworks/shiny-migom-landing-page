@@ -3,6 +3,8 @@
 // Menu open/close & aria attributes
 
 const html = document.querySelector('.html');
+const body = document.querySelector('.body');
+
 const menuButton = document.querySelector('.menu__button');
 const header = document.querySelector('.header');
 const menu = document.querySelector('.menu');
@@ -15,7 +17,9 @@ menuButton.addEventListener('click', () => {
     ? menuButton.setAttribute('aria-label', 'Открыть меню')
     : menuButton.setAttribute('aria-label', 'Закрыть меню');
 
+  window.scrollY = 0;
   html.classList.toggle('html--lock');
+  body.classList.toggle('body--lock');
   header.classList.toggle('header--open-menu');
   menu.classList.toggle('menu--open');
   menuButton.classList.toggle('menu__button--open');
@@ -26,7 +30,6 @@ menuButton.addEventListener('click', () => {
 const heroBackground = document.querySelector('.hero');
 
 const observer = new IntersectionObserver((e) => {
-  console.log(e[0].isIntersecting);
   e[0].isIntersecting
     ? window.addEventListener('scroll', () => {
         heroBackground.style.backgroundPosition = `center bottom ${
