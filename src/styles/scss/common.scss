@@ -5,8 +5,11 @@
 }
 
 .body {
+  overflow-x: hidden;
   font-family: var(--main-font);
   background-color: var(--white-color);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .html--lock {
