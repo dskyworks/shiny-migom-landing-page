@@ -13,4 +13,9 @@
   height: 200px;
   background: url('../images/hero/track.svg') no-repeat;
   background-position: top -120px center;
+
+  @media (max-width: 1079px) {
+    background: url('../images/hero/track-small.svg') no-repeat;
+    background-position: top center;
+  }
 }
