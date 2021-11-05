@@ -8,13 +8,13 @@
 .header--open-menu {
   @media (max-width: 1079px) {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     height: 100vh;
     background-color: #000;
   }
 }
 
-/* Весь header (обертка) */
+/* Header (обертка) */
 
 .header__inner {
   position: relative;
@@ -24,7 +24,8 @@
 
   @media (max-width: 1079px) {
     flex-direction: column;
-    height: 100vh;
+
+    // height: 100vh;
     padding: 30px 47px 65px;
   }
 

@@ -1,10 +1,18 @@
+/* Hero */
+
 .hero {
   height: 849px;
   background: url('../images/hero/bg.jpg') no-repeat;
   background-position: center bottom;
   background-size: cover;
   will-change: background-position;
+
+  @media (max-width: 1079px) {
+    height: 565px;
+  }
 }
+
+/* Hero (обертка) */
 
 .hero__inner {
   @media (min-width: 1080px) {
@@ -17,6 +25,8 @@
     align-items: center;
   }
 }
+
+/* Заголовок */
 
 .hero__title {
   color: var(--white-absolute-color);
@@ -34,6 +44,8 @@
   }
 }
 
+/* Описание */
+
 .hero__description {
   max-width: 540px;
   margin-top: 20px;
@@ -45,12 +57,16 @@
   }
 
   @media (max-width: 1079px) {
+    width: 325px;
     font-size: 16px;
   }
 }
 
+/* Кнопка вызова */
+
 .hero__button {
   position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   height: 66px;
@@ -64,6 +80,8 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Иконка кнопки вызова */
 
 .hero__button::after {
   content: '';
@@ -93,6 +111,8 @@
   }
 }
 
+/* Список карточек услуг */
+
 .services__list {
   display: flex;
   gap: 10px;
@@ -109,6 +129,8 @@
     align-items: center;
   }
 }
+
+/* Карточка услуг */
 
 .services__item {
   width: 100%;
@@ -132,7 +154,7 @@
 }
 
 .services__item-main {
-  width: 412px;
+  max-width: 412px;
   background:
     url('../images/hero/wheel-replace.jpg')
     var(--white-absolute-color) no-repeat;
