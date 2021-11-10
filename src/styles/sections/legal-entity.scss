@@ -1,0 +1,205 @@
+/* Заголовок */
+
+.legal-entity__title {
+  padding: 0 10px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 1080px) {
+    margin-top: 90px;
+    font-size: 45px;
+  }
+
+  @media (max-width: 1079px) {
+    margin-top: 34px;
+    font-size: 30px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 25px;
+  }
+}
+
+/* Акция */
+
+.legal-entity__action {
+  margin-top: 5px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: 1080px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 1079px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
+}
+
+/* Лейбл акции */
+
+.legal-entity__action-label {
+  margin-right: 10px;
+  padding: 3px 15px;
+  background-color: var(--yellow-color);
+  border-radius: 5px;
+}
+
+/* Контент */
+
+.legal-entity__content {
+  display: flex;
+
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    margin-top: 66px;
+  }
+
+  @media (max-width: 1079px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+/* Контентное изображение */
+
+.legal-entity__image-wrapper {
+  @media (min-width: 1080px) {
+    width: 50%;
+    height: 569px;
+  }
+
+  @media (max-width: 1079px) {
+    width: 100%;
+    height: 346px;
+    margin-top: 30px;
+  }
+}
+
+.legal-entity__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Предложение */
+
+.legal-entity__request {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1080px) {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 94px;
+  }
+
+  @media (max-width: 1079px) {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Список условий предложения */
+
+.legal-entity__list {
+  font-weight: 700;
+
+  @media (min-width: 1080px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 1079px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 13px;
+  }
+}
+
+/* Элемент списка */
+
+.legal-entity__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+/* Декоративная палочка :) */
+
+.legal-entity__item::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  width: 5px;
+  height: 28px;
+  background-color: var(--black-color);
+  border-radius: 5px;
+
+  @media (min-width: 1080px) {
+    height: 28px;
+  }
+
+  @media (max-width: 1079px) {
+    height: 24px;
+  }
+
+  @media (max-width: 450px) {
+    height: 20px;
+  }
+}
+
+/* Форма заявки */
+
+.legal-entity__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+
+  @media (min-width: 1080px) {
+    margin-top: 55px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 1079px) {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+}
+
+/* Лейбл для input */
+
+.legal-entity__label {
+  margin-left: 28px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Номер телефона */
+
+.legal-entity__input {
+  margin-top: 6px;
+  padding: 23px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* Отправка формы */
+
+.legal-entity__button {
+  align-self: center;
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 16px;
+}
