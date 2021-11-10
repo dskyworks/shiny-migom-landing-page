@@ -149,8 +149,10 @@
             авто
           </p>
           <button class="hero__button">Вызвать шиномонтаж</button>
-
-          <div class="hero__services services">
+        </div>
+      </section>
+      <section class="services">
+          <div class="container services__inner">
             <ul class="services__list">
               <li class="services__item-main">
                 <a href="#" class="services__link">
@@ -186,9 +188,51 @@
               </li>
             </ul>
           </div>
+      </section>
+      <section class="legal-entity">
+        <div class="legal-entity__inner">
+          <h2 class="legal-entity__title">Для юридических лиц</h2>
+            <p class="legal-entity__action">
+              <span class="legal-entity__action-label">Акция!</span>
+              Первое авто бесплатно!
+            </p>
+            <div class="legal-entity__content">
+              <div class="legal-entity__image-wrapper">
+                <img
+                  src="images/section-1/parking.jpg"
+                  alt="Автомобили на парковке"
+                  class="legal-entity__image"
+                />
+              </div>
+              <div class="legal-entity__request">
+                <ul class="legal-entity__list">
+                  <li class="legal-entity__item">Работа с НДС</li>
+                  <li class="legal-entity__item">
+                    Комплексное обслуживание автопарков
+                  </li>
+                  <li class="legal-entity__item">Заключение договора</li>
+                  <li class="legal-entity__item">
+                    Оплата после выполнения работ
+                  </li>
+                </ul>
+                <form class="legal-entity__form" action="#" method="post">
+                  <label
+                    for="LegalEntityMobile"
+                    class="legal-entity__label"
+                  >Ваш телефон</label>
+                  <input
+                    type="tel"
+                    class="legal-entity__input"
+                    id="LegalEntityMobile"
+                    name="LegalEntityMobile"
+                    placeholder="+7(___) ___ __ __"
+                    required />
+                  <button class="legal-entity__button request-button request-button--yellow" type="submit">Оформить заявку</button
+                ></form>
+              </div>
+            </div>
         </div>
       </section>
-      <section class="second"></section>
     </main>
     <footer class="footer"></footer>
 
