@@ -7,6 +7,7 @@ import terse from 'gulp-terser';
 import browSync from 'browser-sync';
 import autoprefixer from 'gulp-autoprefixer';
 import eslint from 'gulp-eslint';
+import fileinclude from 'gulp-file-include';
 
 const sass = gulpSass(dartSass);
 const terser = terse.default;
@@ -15,7 +16,10 @@ const browserSync = browSync.create();
 // Paths
 const paths = {
   html: {
-    src: 'src/index.html',
+    src: {
+      all: 'src/html/*.html',
+      index: 'src/html/index.html',
+  }
   },
   styles: {
     folder: 'src/styles/',
@@ -84,6 +88,18 @@ export const styles = () => {
     .pipe(browserSync.stream());
 };
 
+// HTML @@include
+
+export const fileInclude = () => {
+  return gulp
+    .src([paths.html.src.index])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./src'));
+};
+
 // Clean dist folder
 export const clean = () => {
   return del('dist');
@@ -91,9 +107,10 @@ export const clean = () => {
 
 // Watching
 export const watching = () => {
+  gulp.watch([paths.html.src.all], fileInclude);
   gulp.watch([paths.styles.src.all, `!${paths.styles.src.min}`], styles);
   gulp.watch([paths.scripts.src.all, `!${paths.scripts.src.min}`], scripts);
-  gulp.watch(paths.html.src).on('change', browserSync.reload);
+  gulp.watch(paths.html.src.all).on('change', browserSync.reload);
 };
 
 // Build
@@ -114,5 +131,5 @@ export const build = () => {
 };
 
 // Parallel
-const parallel = gulp.parallel(styles, scripts, browsersync, watching);
+const parallel = gulp.parallel(fileInclude, styles, scripts, browsersync, watching);
 export default parallel;
