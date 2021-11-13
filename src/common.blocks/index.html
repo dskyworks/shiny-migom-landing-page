@@ -152,76 +152,74 @@
         </div>
       </section>
       <section class="services">
-          <div class="container services__inner">
-            <ul class="services__list">
-              <li class="services__item-main">
-                <a href="#" class="services__link">
-                  <p class="services__card-price">Стоимость</p>
-                  <h2 class="services__card-title">
-                    МОБИЛЬНЫЙ РЕМОНТ И ЗАМЕНА КОЛЕС
-                  </h2>
-                  <p class="services__card-description">
-                    Услуги выездного шиномонтажа в СПб и ЛО для транспортных
-                    средств
-                  </p>
-                </a>
-              </li>
-              <li class="services__item services__item--passenger">
-                <a href="#" class="services__link">
-                  <p class="services__card-price">от 199₽</p>
-                  <h3 class="services__card-title">Легковые авто</h3>
-                </a>
-              </li>
-              <li class="services__item services__item--crossover">
-                <a href="#" class="services__link">
-                  <p class="services__card-price">от 299₽</p>
-                  <h3 class="services__card-title">
-                    Кроссоверы, джипы, минивэны
-                  </h3>
-                </a>
-              </li>
-              <li class="services__item services__item--truck">
-                <a href="#" class="services__link">
-                  <p class="services__card-price">от 399₽</p>
-                  <h3 class="services__card-title">Коммерческий транспорт</h3>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="container services__inner">
+          <ul class="services__list">
+            <li class="services__item-main">
+              <a href="#" class="services__link">
+                <p class="services__card-price">Стоимость</p>
+                <h2 class="services__card-title">
+                  МОБИЛЬНЫЙ РЕМОНТ И ЗАМЕНА КОЛЕС
+                </h2>
+                <p class="services__card-description">
+                  Услуги выездного шиномонтажа в СПб и ЛО для транспортных
+                  средств
+                </p>
+              </a>
+            </li>
+            <li class="services__item services__item--passenger">
+              <a href="#" class="services__link">
+                <p class="services__card-price">от 199₽</p>
+                <h3 class="services__card-title">Легковые авто</h3>
+              </a>
+            </li>
+            <li class="services__item services__item--crossover">
+              <a href="#" class="services__link">
+                <p class="services__card-price">от 299₽</p>
+                <h3 class="services__card-title">
+                  Кроссоверы, джипы, минивэны
+                </h3>
+              </a>
+            </li>
+            <li class="services__item services__item--truck">
+              <a href="#" class="services__link">
+                <p class="services__card-price">от 399₽</p>
+                <h3 class="services__card-title">Коммерческий транспорт</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="legal-entity">
         <div class="legal-entity__inner">
           <h2 class="legal-entity__title">Для юридических лиц</h2>
-            <p class="legal-entity__action">
-              <span class="legal-entity__action-label">Акция!</span>
-              Первое авто бесплатно!
-            </p>
-            <div class="legal-entity__content">
-              <div class="legal-entity__image-wrapper">
-                <img
-                  src="images/section-1/parking.jpg"
-                  alt="Автомобили на парковке"
-                  class="legal-entity__image"
-                />
-              </div>
-              <div class="legal-entity__request">
-                <ul class="legal-entity__list">
-                  <li class="legal-entity__item">Работа с НДС</li>
-                  <li class="legal-entity__item">
-                    Комплексное обслуживание автопарков
-                  </li>
-                  <li class="legal-entity__item">Заключение договора</li>
-                  <li class="legal-entity__item">
-                    Оплата после выполнения работ
-                  </li>
-                </ul>
-                @@include('form/_make-request.html', {
-                  "class": "legal-entity__form legal-entity__form--vertical",
-                  "for": "legalEntityForm",
-                  "buttonColor": "yellow",
-                })
-              </div>
+          <p class="legal-entity__action">
+            <span class="legal-entity__action-label">Акция!</span>
+            Первое авто бесплатно!
+          </p>
+          <div class="legal-entity__content">
+            <div class="legal-entity__image-wrapper">
+              <img
+                src="images/section-1/parking.jpg"
+                alt="Автомобили на парковке"
+                class="legal-entity__image"
+              />
             </div>
+            <div class="legal-entity__request">
+              <ul class="legal-entity__list">
+                <li class="legal-entity__item">Работа с НДС</li>
+                <li class="legal-entity__item">
+                  Комплексное обслуживание автопарков
+                </li>
+                <li class="legal-entity__item">Заключение договора</li>
+                <li class="legal-entity__item">
+                  Оплата после выполнения работ
+                </li>
+              </ul>
+              @@include('form/_make-request.html', { "class":
+              "legal-entity__form legal-entity__form--vertical", "for":
+              "legalEntityForm", "buttonColor": "yellow", })
+            </div>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -230,23 +228,49 @@
           <ul class="advantages__list">
             <li class="advantages__item">Онлайн запись</li>
             <li class="advantages__item">Бесконтактное обслуживание</li>
-            <li class="advantages__item">Сертифицированное оборудование и мастера</li>
-            <li class="advantages__item">Гарантия на все виды работ 365 дней</li>
+            <li class="advantages__item">
+              Сертифицированное оборудование и мастера
+            </li>
+            <li class="advantages__item">
+              Гарантия на все виды работ 365 дней
+            </li>
             <li class="advantages__item">Все типы оплат</li>
             <li class="advantages__item">Без очередей</li>
-            <li class="advantages__item"> В удобном месте</li>
+            <li class="advantages__item">В удобном месте</li>
             <li class="advantages__item">В удобном месте</li>
           </ul>
-          <img class="advantages__image" src="images/advantages/wheel.png" alt="Колесо">
+          <img
+            class="advantages__image"
+            src="images/advantages/wheel.png"
+            alt="Колесо"
+          />
         </div>
       </section>
       <section class="hours24">
         <h2 class="hours24__title">Мобильный шиномонтаж 24 часа в сутки</h2>
-        @@include('form/_make-request.html', {
-          "class": "hours24__form",
-          "for": "Hours24Form",
-          "buttonColor": "black",
-        })
+        @@include('form/_make-request.html', { "class": "hours24__form", "for":
+        "Hours24Form", "buttonColor": "black", })
+      </section>
+      <section class="additional">
+        <h2 class="additional__title">Дополнительные работы</h2>
+        <div class="additional__content">
+          <img
+            class="additional__image"
+            src="images/additional/wheels.png"
+            alt="4 колеса"
+          />
+          <ul class="additional__list">
+            <li class="additional__item">Сезонное хранение шин</li>
+            <li class="additional__item">Ремонт шин и дисков</li>
+            <li class="additional__item">Снятие секреток</li>
+            <li class="additional__item">Ошиповка</li>
+            <li class="additional__item">Покраска дисков</li>
+            <li class="additional__item">Утилизация шин</li>
+            <li class="additional__item">Заправка кондиционера</li>
+            <li class="additional__item">Запуск авто в зимнее время</li>
+            <li class="additional__item">Trade in шин</li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>
