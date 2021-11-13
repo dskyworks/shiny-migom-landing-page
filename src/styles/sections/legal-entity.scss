@@ -160,10 +160,8 @@
 /* Форма заявки */
 
 .legal-entity__form {
-  display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 350px;
 
   @media (min-width: 1080px) {
     margin-top: 55px;
@@ -176,31 +174,8 @@
   }
 }
 
-/* Лейбл для input */
 
-.legal-entity__label {
-  margin-left: 28px;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-/* Номер телефона */
-
-.legal-entity__input {
-  height: 66px;
-  margin-top: 6px;
-  padding: 23px 28px;
-  font-weight: 700;
-  font-size: 16px;
-  border: 0;
-  border-radius: 5px;
-}
-
-/* Отправка формы */
-
-.legal-entity__button {
+.legal-entity__form .make-request-form__button {
   align-self: center;
   margin-top: 24px;
-  font-weight: 700;
-  font-size: 16px;
 }
