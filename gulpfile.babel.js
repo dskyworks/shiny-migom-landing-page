@@ -17,8 +17,8 @@ const browserSync = browSync.create();
 const paths = {
   html: {
     src: {
-      all: 'src/html/*.html',
-      index: 'src/html/index.html',
+      include: 'src/common.blocks/**/*.html',
+      index: 'src/common.blocks/index.html',
   }
   },
   styles: {
@@ -107,10 +107,10 @@ export const clean = () => {
 
 // Watching
 export const watching = () => {
-  gulp.watch([paths.html.src.all], fileInclude);
+  gulp.watch([paths.html.src.include], fileInclude);
   gulp.watch([paths.styles.src.all, `!${paths.styles.src.min}`], styles);
   gulp.watch([paths.scripts.src.all, `!${paths.scripts.src.min}`], scripts);
-  gulp.watch(paths.html.src.all).on('change', browserSync.reload);
+  gulp.watch(paths.html.src.include).on('change', browserSync.reload);
 };
 
 // Build
