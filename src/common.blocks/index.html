@@ -215,26 +215,11 @@
                     Оплата после выполнения работ
                   </li>
                 </ul>
-                <form class="make-request-form legal-entity__form legal-entity__form--vertical" action="#" method="post">
-  <label for="legalEntityForm" class="make-request-form__label">
-    <span class="make-request-form__label-text">Ваш телефон</span>
-    <input
-      type="tel"
-      class="make-request-form__input"
-      id="legalEntityForm"
-      name="legalEntityForm"
-      placeholder="+7(___) ___ __ __"
-      required
-    />
-  </label>
-  <button
-    class="make-request-form__button request-button request-button--yellow"
-    type="submit"
-  >
-    Оформить заявку
-  </button>
-</form>
-
+                @@include('form/_make-request.html', {
+                  "class": "legal-entity__form legal-entity__form--vertical",
+                  "for": "legalEntityForm",
+                  "buttonColor": "yellow",
+                })
               </div>
             </div>
         </div>
@@ -257,26 +242,11 @@
       </section>
       <section class="hours24">
         <h2 class="hours24__title">Мобильный шиномонтаж 24 часа в сутки</h2>
-        <form class="make-request-form hours24__form" action="#" method="post">
-  <label for="Hours24Form" class="make-request-form__label">
-    <span class="make-request-form__label-text">Ваш телефон</span>
-    <input
-      type="tel"
-      class="make-request-form__input"
-      id="Hours24Form"
-      name="Hours24Form"
-      placeholder="+7(___) ___ __ __"
-      required
-    />
-  </label>
-  <button
-    class="make-request-form__button request-button request-button--black"
-    type="submit"
-  >
-    Оформить заявку
-  </button>
-</form>
-
+        @@include('form/_make-request.html', {
+          "class": "hours24__form",
+          "for": "Hours24Form",
+          "buttonColor": "black",
+        })
       </section>
     </main>
     <footer class="footer"></footer>
