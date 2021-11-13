@@ -1,0 +1,44 @@
+.make-request-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-request-form__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+.make-request-form__label-text {
+  margin-left: 28px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.make-request-form__input {
+  height: 66px;
+  margin-top: 6px;
+  padding: 23px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.make-request-form__button {
+  height: 66px;
+  font-weight: 700;
+  font-size: 16px;
+
+  @media (min-width: 1080px) {
+    align-self: flex-end;
+    margin-left: 18px;
+  }
+
+  @media (max-width: 1079px) {
+    align-self: center;
+    margin-top: 40px;
+  }
+}
