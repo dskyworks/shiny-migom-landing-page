@@ -130,6 +130,5 @@ export const build = () => {
     .pipe(gulp.dest('dist'));
 };
 
-// Parallel
-const parallel = gulp.parallel(fileInclude, styles, scripts, browsersync, watching);
-export default parallel;
+// Default
+exports.default = gulp.parallel(fileInclude, styles, scripts, browsersync, watching);
