@@ -1,0 +1,28 @@
+.call-tire-service__button {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 66px;
+  margin-top: 72px;
+  padding: 0 58px 0 18px;
+  color: var(--black-absolute-color);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--yellow-color);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Иконка кнопки вызова */
+
+.call-tire-service__button::after {
+  content: '';
+  position: absolute;
+  right: 18px;
+  width: 33px;
+  height: 33px;
+  background: url('../images/hero/ico-wheel.png') no-repeat center;
+  background-size: cover;
+}
