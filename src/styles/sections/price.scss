@@ -1,0 +1,146 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 830px;
+  margin: 0 auto;
+  padding: 92px 10px;
+}
+
+.price__title {
+  font-weight: 800;
+  text-align: center;
+
+  @media (min-width: 1080px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 1079px) {
+    font-size: 30px;
+  }
+}
+
+.price__select-radius {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1080px) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: 1079px) {
+    margin-top: 45px;
+  }
+}
+
+.price__description {
+  font-size: 16px;
+  opacity: 50%;
+
+  @media (min-width: 1080px) {
+    align-self: end;
+    margin-right: 55px;
+  }
+
+  @media (max-width: 1079px) {
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+}
+
+.price__selector-input {
+  display: none;
+
+  @media (min-width: 1080px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.price__label {
+  display: flex;
+  justify-content: space-between;
+  width: 454px;
+  margin-bottom: 15px;
+}
+
+.price__input {
+  width: 420px;
+  height: 3px;
+  margin-bottom: 7px;
+  background: #ebe9e9;
+  appearance: none;
+}
+
+.price__input::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  background: url('../images/price/choose.svg');
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+}
+
+.price__input::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: url('../images/price/choose.svg');
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price__select {
+  display: none;
+
+  @media (max-width: 1079px) {
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+    padding-left: 16px;
+    color: var(--black-color);
+    font-weight: 800;
+    font-size: 16px;
+    background-color: #e5e5e5;
+    border: 0;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 450px) {
+    width: 120px;
+  }
+}
+
+.price__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 33px;
+}
+
+.price__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 17px;
+  background-color: #ebe9e9;
+  transition: background-color 0.1s;
+}
+
+.price__item:hover {
+  background-color: #e2e2e2;
+}
+
+.price__value {
+  flex-shrink: 0;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.price__button {
+  align-self: center;
+}
