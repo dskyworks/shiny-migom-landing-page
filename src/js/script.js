@@ -544,3 +544,26 @@ priceSelect.addEventListener('change', () => {
   priceInput.value = priceSelect.value;
   priceDataUpdate();
 });
+
+const swiper = new Swiper('.swiper', {
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      grid: {
+        rows: 3,
+      },
+    },
+    1080: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+      grid: {
+        rows: 2,
+      },
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
