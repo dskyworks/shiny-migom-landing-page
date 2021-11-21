@@ -1,0 +1,144 @@
+.footer {
+  color: var(--white-absolute-color);
+  background: url('../images/footer/wheel-mark.svg') var(--black-color) no-repeat;
+
+  @media (min-width: 1080px) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-position: calc(50% + 210px) 123%;
+  }
+
+  @media (max-width: 1079px) {
+    background-position: center top -450px;
+  }
+}
+
+.footer__top {
+  display: flex;
+
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 90px;
+  }
+
+  @media (max-width: 1079px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+.footer__logo {
+  @media (min-width: 1080px) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 1079px) {
+    order: 0;
+  }
+}
+
+.footer__navigation {
+  @media (max-width: 1079px) {
+    order: 2;
+    margin-top: 57px;
+  }
+}
+
+.footer-internal__list {
+  display: flex;
+  font-weight: 800;
+
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    gap: 33px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 1079px) {
+    flex-direction: column;
+    gap: 22px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.footer-internal__link {
+  color: var(--white-absolute-color);
+}
+
+.footer-external__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: 1080px) {
+    justify-content: flex-end;
+    margin-top: 25px;
+  }
+
+  @media (max-width: 1079px) {
+    justify-content: center;
+    margin-top: 68px;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1079px) {
+    order: 1;
+    margin-top: 50px;
+  }
+}
+
+.footer__tel {
+  align-self: center;
+  color: var(--yellow-color);
+  font-weight: 800;
+  font-size: 18px;
+
+  @media (min-width: 1080px) {
+    align-self: flex-end;
+  }
+}
+
+.footer__whatsapp {
+  padding: 14px 30px;
+  color: var(--yellow-color);
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  border: solid var(--yellow-color) 1px;
+  border-radius: 5px;
+
+  @media (min-width: 1080px) {
+    margin-top: 19px;
+  }
+
+  @media (max-width: 1079px) {
+    margin-top: 26px;
+  }
+}
+
+.footer__bottom {
+  text-align: center;
+  border-top: solid #fff4;
+
+  @media (min-width: 1080px) {
+    padding: 11px 0 18px;
+  }
+
+  @media (max-width: 1079px) {
+    padding: 23px 0 38px;
+  }
+}
+
+.footer__copyright {
+  font-weight: 500;
+  font-size: 12px;
+}
