@@ -6,7 +6,8 @@ const body = document.querySelector('.body');
 
 const menuButton = document.querySelector('.menu__button');
 const header = document.querySelector('.header');
-const menu = document.querySelector('.menu');
+const burgerMenu = document.querySelector('.burger-menu');
+const burgerMenuLinks = document.querySelectorAll('.burger-menu__link');
 
 menuButton.addEventListener('click', () => {
   let expanded = menuButton.getAttribute('aria-expanded') === 'true';
@@ -20,9 +21,21 @@ menuButton.addEventListener('click', () => {
   html.classList.toggle('html--lock');
   body.classList.toggle('body--lock');
   header.classList.toggle('header--open-menu');
-  menu.classList.toggle('menu--open');
+  burgerMenu.classList.toggle('menu--open');
   menuButton.classList.toggle('menu__button--open');
 });
+
+for (let i = 0; i < burgerMenuLinks.length; i++) {
+  burgerMenuLinks[i].addEventListener('click', () => {
+    menuButton.getAttribute('aria-expanded') === 'false';
+    menuButton.setAttribute('aria-label', 'Открыть меню');
+    html.classList.remove('html--lock');
+    body.classList.remove('body--lock');
+    header.classList.remove('header--open-menu');
+    burgerMenu.classList.remove('menu--open');
+    menuButton.classList.remove('menu__button--open');
+  });
+}
 
 // Hero background animation
 const heroBackground = document.querySelector('.hero');
