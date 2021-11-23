@@ -57,7 +57,9 @@
                   <a href="#services" class="burger-menu__link">услуги</a>
                 </li>
                 <li class="burger-menu__item">
-                  <a href="#advantages" class="burger-menu__link">преимущества</a>
+                  <a href="#advantages" class="burger-menu__link"
+                    >преимущества</a
+                  >
                 </li>
                 <li class="burger-menu__item">
                   <a href="#additional" class="burger-menu__link">работы</a>
@@ -115,7 +117,8 @@
             брендов. Подбор осуществляется как по типоразмеру, так и по марке
             авто
           </p>
-          @@include('button/_call-tire-service.html')
+          @@include('button/_call-tire-service.html', { "buttonClass":
+          "hero__button", })
         </div>
       </section>
       <section class="services">
@@ -291,8 +294,8 @@
           </div>
         </div>
         <ul class="price__list"></ul>
-        @@include('button/_call-tire-service.html', { "class": "price__button"
-        })
+        @@include('button/_call-tire-service.html', { "buttonClass":
+        "price__button" })
       </section>
       <section class="reviews container">
         <h2 class="reviews__title">Отзывы и рекомендации</h2>
