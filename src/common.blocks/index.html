@@ -168,12 +168,20 @@
           </p>
           <div class="legal-entity__content">
             <div class="legal-entity__image-wrapper">
-              <img
-                loading="lazy"
-                src="images/legal-entity/parking.jpg"
-                alt="Автомобили на парковке"
-                class="legal-entity__image"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  class="legal-entity__image"
+                  srcset="images/legal-entity/parking.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="legal-entity__image"
+                  loading="lazy"
+                  src="images/legal-entity/parking.jpg"
+                  alt="Автомобили на парковке"
+                />
+              </picture>
             </div>
             <div class="legal-entity__request">
               <ul class="legal-entity__list">
@@ -210,12 +218,20 @@
             <li class="advantages__item">В удобном месте</li>
             <li class="advantages__item">В удобном месте</li>
           </ul>
-          <img
-            loading="lazy"
-            class="advantages__image"
-            src="images/advantages/wheel.png"
-            alt="Колесо"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              class="advantages__image"
+              srcset="images/advantages/wheel.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              class="advantages__image"
+              src="images/advantages/wheel.png"
+              alt="Колесо"
+            />
+          </picture>
         </div>
       </section>
       <section class="hours24">
@@ -226,12 +242,18 @@
       <section class="additional" id="additional">
         <h2 class="additional__title">Дополнительные работы</h2>
         <div class="additional__content">
-          <img
-            loading="lazy"
-            class="additional__image"
-            src="images/additional/wheels.png"
-            alt="4 колеса"
-          />
+          <picture class="additional__image">
+            <source
+              type="image/webp"
+              srcset="images/additional/wheels.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="images/additional/wheels.png"
+              alt="4 колеса"
+            />
+          </picture>
           <ul class="additional__list">
             <li class="additional__item">Сезонное хранение шин</li>
             <li class="additional__item">Ремонт шин и дисков</li>
@@ -252,12 +274,10 @@
           </h2>
           <div class="map__description">Зона покрытия</div>
         </div>
-        <img
-          loading="lazy"
-          class="map__image"
-          src="images/map/map.jpg"
-          alt="Карта"
-        />
+        <picture class="map__image">
+          <source type="image/webp" srcset="images/map/map.webp" />
+          <img loading="lazy" src="images/map/map.jpg" alt="Карта" />
+        </picture>
       </section>
       <section class="price" id="price">
         <h2 class="price__title">ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ</h2>
@@ -328,145 +348,275 @@
           <ul class="partners__list swiper-wrapper">
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/uklon@1x.png"
-                  srcset="images/partners/uklon@2x.png 2x"
-                  alt="uklon"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/uklon@1x.webp 1x,
+                      images/partners/uklon@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/uklon@1x.png"
+                    srcset="images/partners/uklon@2x.png 2x"
+                    alt="uklon"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/esomia@1x.png"
-                  srcset="images/partners/esomia@2x.png 2x"
-                  alt="esomia"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/esomia@1x.webp 1x,
+                      images/partners/esomia@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/esomia@1x.png"
+                    srcset="images/partners/esomia@2x.png 2x"
+                    alt="esomia"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/ozon@1x.png"
-                  srcset="images/partners/ozon@2x.png 2x"
-                  alt="ozon"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/ozon@1x.webp 1x,
+                      images/partners/ozon@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/ozon@1x.png"
+                    srcset="images/partners/ozon@2x.png 2x"
+                    alt="ozon"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/artel@1x.png"
-                  srcset="images/partners/artel@2x.png 2x"
-                  alt="artel"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/artel@1x.webp 1x,
+                      images/partners/artel@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/artel@1x.png"
+                    srcset="images/partners/artel@2x.png 2x"
+                    alt="artel"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/esomia@1x.png"
-                  srcset="images/partners/esomia@2x.png 2x"
-                  alt="esomia"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/esomia@1x.webp 1x,
+                      images/partners/esomia@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/esomia@1x.png"
+                    srcset="images/partners/esomia@2x.png 2x"
+                    alt="esomia"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/samsung@1x.png"
-                  srcset="images/partners/samsung@2x.png 2x"
-                  alt="samsung"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/samsung@1x.webp 1x,
+                      images/partners/samsung@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/samsung@1x.png"
+                    srcset="images/partners/samsung@2x.png 2x"
+                    alt="samsung"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/artel@1x.png"
-                  srcset="images/partners/artel@2x.png 2x"
-                  alt="artel"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/artel@1x.webp 1x,
+                      images/partners/artel@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/artel@1x.png"
+                    srcset="images/partners/artel@2x.png 2x"
+                    alt="artel"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/ozon@1x.png"
-                  srcset="images/partners/ozon@2x.png 2x"
-                  alt="ozon"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/ozon@1x.webp 1x,
+                      images/partners/ozon@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/ozon@1x.png"
+                    srcset="images/partners/ozon@2x.png 2x"
+                    alt="ozon"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/samsung@1x.png"
-                  srcset="images/partners/samsung@2x.png 2x"
-                  alt="samsung"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/samsung@1x.webp 1x,
+                      images/partners/samsung@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/samsung@1x.png"
+                    srcset="images/partners/samsung@2x.png 2x"
+                    alt="samsung"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/zalando@1x.png"
-                  srcset="images/partners/zalando@2x.png 2x"
-                  alt="zalando"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/zalando@1x.webp 1x,
+                      images/partners/zalando@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/zalando@1x.png"
+                    srcset="images/partners/zalando@2x.png 2x"
+                    alt="zalando"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/uklon@1x.png"
-                  srcset="images/partners/uklon@2x.png 2x"
-                  alt="uklon"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/uklon@1x.webp 1x,
+                      images/partners/uklon@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/uklon@1x.png"
+                    srcset="images/partners/uklon@2x.png 2x"
+                    alt="uklon"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/esomia@1x.png"
-                  srcset="images/partners/esomia@2x.png 2x"
-                  alt="esomia"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/esomia@1x.webp 1x,
+                      images/partners/esomia@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/esomia@1x.png"
+                    srcset="images/partners/esomia@2x.png 2x"
+                    alt="esomia"
+                  />
+                </picture>
               </a>
             </li>
             <li class="partners__item swiper-slide">
               <a class="partners__link" href="#">
-                <img
-                  loading="lazy"
-                  class="partners__logo"
-                  src="images/partners/artel@1x.png"
-                  srcset="images/partners/artel@2x.png 2x"
-                  alt="artel"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    class="partners__logo"
+                    srcset="
+                      images/partners/artel@1x.webp 1x,
+                      images/partners/artel@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    class="partners__logo"
+                    src="images/partners/artel@1x.png"
+                    srcset="images/partners/artel@2x.png 2x"
+                    alt="artel"
+                  />
+                </picture>
               </a>
             </li>
           </ul>
@@ -507,14 +657,23 @@
           <ul class="footer-external__list">
             <li class="footer-external__item">
               <a href="" class="footer-external__link">
-                <img
-                  loading="lazy"
-                  src="images/footer/logo-avito@1x.png"
-                  srcset="images/footer/logo-avito@2x.png 2x"
-                  width="78"
-                  height="28"
-                  alt="Авито"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/footer/logo-avito@1x.webp 1x,
+                      images/footer/logo-avito@2x.webp 2x
+                    "
+                  />
+                  <img
+                    loading="lazy"
+                    src="images/footer/logo-avito@1x.png"
+                    srcset="images/footer/logo-avito@2x.png 2x"
+                    width="78"
+                    height="28"
+                    alt="Авито"
+                  />
+                </picture>
               </a>
             </li>
             <li class="footer-external__item">
