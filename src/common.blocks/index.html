@@ -539,6 +539,19 @@
         <span class="footer__copyright">2016 - 2021 © "Шины мигом"</span>
       </div>
     </footer>
+    <div class="call-request-modal">
+      <button
+        type="button"
+        class="call-request-modal__cross"
+        aria-label="Закрыть окно"
+      ></button>
+      <h1 class="call-request-modal__title">
+        Мобильный шиномонтаж<br />24 часа в сутки
+      </h1>
+      @@include('form/_make-request.html', { "class":
+      "call-request-modal__form", "for": "callRequestModalForm", "buttonColor":
+      "yellow", "buttonClass": "hello", })
+    </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
