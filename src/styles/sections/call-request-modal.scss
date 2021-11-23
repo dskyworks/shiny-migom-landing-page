@@ -1,0 +1,54 @@
+.call-request-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  max-width: 450px;
+  height: 400px;
+  margin: auto;
+  padding: 10px;
+  color: #fff;
+  background-color: #000d;
+  border-radius: 5px;
+  box-shadow: #000 0 0 40px -4px;
+  backdrop-filter: blur(10px);
+}
+
+.call-request-modal__cross {
+  align-self: flex-end;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  background: url('../images/icons/icon-modal-cross.svg') no-repeat center;
+  border: 0;
+  cursor: pointer;
+}
+
+.call-request-modal__title {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.call-request-modal__form {
+  flex-direction: column;
+  width: 100%;
+  max-width: 294px;
+}
+
+.call-request-modal__form button {
+  align-self: center;
+  margin-top: 40px;
+}
+
+.call-request-modal--open {
+  display: flex;
+}
