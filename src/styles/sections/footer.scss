@@ -97,6 +97,9 @@
 }
 
 .footer__tel {
+  position: relative;
+  display: flex;
+  align-items: center;
   align-self: center;
   color: var(--yellow-color);
   font-weight: 800;
@@ -105,6 +108,15 @@
   @media (min-width: 1080px) {
     align-self: flex-end;
   }
+}
+
+.footer__tel::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  width: 13px;
+  height: 13px;
+  background: url('../images/footer/icon-phone.svg');
 }
 
 .footer__whatsapp {
