@@ -37,6 +37,23 @@ for (let i = 0; i < burgerMenuLinks.length; i++) {
   });
 }
 
+// Modal window
+const callRequestModal = document.querySelector('.call-request-modal');
+const callRequestButton = document.querySelectorAll(
+  '.call-tire-service__button'
+);
+const callRequestCross = document.querySelector('.call-request-modal__cross');
+
+for (let i = 0; i < callRequestButton.length; i++) {
+  callRequestButton[i].addEventListener('click', () => {
+    callRequestModal.classList.add('call-request-modal--open');
+  });
+}
+
+callRequestCross.addEventListener('click', () => {
+  callRequestModal.classList.remove('call-request-modal--open');
+});
+
 // Hero background animation
 const heroBackground = document.querySelector('.hero');
 
