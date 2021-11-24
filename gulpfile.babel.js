@@ -89,7 +89,6 @@ export const styles = () => {
 };
 
 // HTML @@include
-
 export const fileInclude = () => {
   return gulp
     .src([paths.html.src.index])
@@ -103,6 +102,11 @@ export const fileInclude = () => {
 // Clean dist folder
 export const clean = () => {
   return del('dist');
+};
+
+// Clean common.blocks folder
+export const cleanCommonBlocks = () => {
+  return del('dist/common.blocks');
 };
 
 // Watching

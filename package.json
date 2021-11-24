@@ -4,7 +4,7 @@
     "start": "gulp",
     "test": "editorconfig-checker",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
-    "build": "gulp clean && gulp build && npm run html"
+    "build": "gulp clean && gulp build && npm run html && gulp cleanCommonBlocks"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
