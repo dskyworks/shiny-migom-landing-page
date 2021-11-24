@@ -1,6 +1,6 @@
 # Hello World!
 
-## Portfolio: [dskyworks.ru](http://dskyworks.ru)
+## Портфолио: [dskyworks.ru](http://dskyworks.ru)
 
 ```javascript
 const dskyworks = {
@@ -18,3 +18,11 @@ const dskyworks = {
   },
 };
 ```
+
+# Макет для отработки навыков ([GitHub Pages](https://dskyworks.github.io/shiny-migom-landing-page/dist/))
+## Дизайн
+[Макет в Figma](https://www.figma.com/file/twccLDdo09LZwK2HExofqx/Untitled-Copy)
+## Разработка
+- Установка зависимостей: `npm i`
+- Запуск Gulp для локальной разработки: `npm start`
+- Сборка: `npm run build`
