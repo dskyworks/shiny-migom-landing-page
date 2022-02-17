@@ -7,6 +7,8 @@
     "build": "gulp clean && gulp build && npm run html && gulp cleanCommonBlocks"
   },
   "devDependencies": {
+    "follow-redirects": ">=1.14.8",
+    "engine.io": ">=4.0.0",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/register": "^7.16.0",
