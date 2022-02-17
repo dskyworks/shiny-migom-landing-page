@@ -3,26 +3,46 @@
 ## Портфолио: [dskyworks.ru](http://dskyworks.ru)
 
 ```javascript
-const dskyworks = {
+let dskyworks = {
   about: {
-    firstName: 'Vladislav',
-    lastName: 'Dribinsky',
+    firstName: 'Владислав',
+    lastName: 'Дрибинский',
     age: 29,
-    country: 'Russia',
-    city: 'Orel',
+    country: 'Россия',
+    city: 'Орел'
   },
-  skills: ['HTML5', 'CSS3', 'JS(basic)', 'npm', 'Gulp', 'Git', 'Figma'],
+  skills: [
+    'HTML',
+    'CSS',
+    'JS(basic)',
+    'Gulp',
+    'Webpack',
+    'Git'
+  ],
   contacts: {
-    telegram: '@dribinsky',
+    github: 'dskyworks',
     vk: 'dskyworks',
-  },
+    telegram: '@dskyworks'
+  }
 };
 ```
 
-# Макет для отработки навыков ([GitHub Pages](https://dskyworks.github.io/shiny-migom-landing-page/dist/))
+# Макет ([GitHub Pages](https://dskyworks.github.io/shiny-migom-landing-page/dist/))
 ## Дизайн
 [Макет в Figma](https://www.figma.com/file/twccLDdo09LZwK2HExofqx/Untitled-Copy)
-## Разработка
-- Установка зависимостей: `npm i`
-- Запуск Gulp для локальной разработки: `npm start`
-- Сборка: `npm run build`
+
+## Установка
+
+``` bash
+git clone https://github.com/dskyworks/shiny-migom-landing-page.git
+cd shiny-migom-landing-page
+npm i
+```
+
+## Использование
+``` bash
+# Запуск сервера
+npm start
+# Сборка в продакшн
+npm run build
+```
