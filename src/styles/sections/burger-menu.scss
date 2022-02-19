@@ -7,12 +7,11 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #000;
-  visibility: hidden;
+  padding-top: 140px;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-top: 140px;
-
+  background-color: #000;
+  visibility: hidden;
 }
 
 .menu--open {
@@ -48,9 +47,9 @@
 }
 
 .burger-menu__tel {
+  margin-bottom: 25px;
   color: var(--white-color);
   font-weight: 800;
   font-size: 20px;
-  margin-bottom: 25px;
 }
 
