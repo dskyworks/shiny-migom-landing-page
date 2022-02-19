@@ -135,4 +135,5 @@ export const build = () => {
 };
 
 // Default
-exports.default = gulp.parallel(fileInclude, styles, scripts, browsersync, watching);
+const parallel = gulp.parallel(fileInclude, styles, scripts, browsersync, watching);
+export default parallel;
