@@ -1,32 +1,3 @@
-# Hello World!
-
-## Портфолио: [dskyworks.ru](http://dskyworks.ru)
-
-```javascript
-let dskyworks = {
-  about: {
-    firstName: 'Владислав',
-    lastName: 'Дрибинский',
-    age: 29,
-    country: 'Россия',
-    city: 'Орел'
-  },
-  skills: [
-    'HTML',
-    'CSS',
-    'JS(basic)',
-    'Gulp',
-    'Webpack',
-    'Git'
-  ],
-  contacts: {
-    github: 'dskyworks',
-    vk: 'dskyworks',
-    telegram: '@dskyworks'
-  }
-};
-```
-
 # Макет ([GitHub Pages](https://dskyworks.github.io/shiny-migom-landing-page/dist/))
 ## Дизайн
 [Макет в Figma](https://www.figma.com/file/twccLDdo09LZwK2HExofqx/Untitled-Copy)
